@@ -458,7 +458,7 @@ self.props = {
 
     if (path.startsWith('/~_~_goindex/resources/')) {
       const remain = path.replace('/~_~_goindex/resources/', '');
-      const r = await fetch(`https://raw.githubusercontent.com/alx-xlx/goindex/production/themes/material-vue-${self.props.ui}/${remain}`);
+      const r = await fetch(`https://raw.githubusercontent.com/ronioncloud/goindex/production/themes/material-vue-${self.props.ui}/${remain}`);
       return new Response(r.body, {
         headers: {
           'Content-Type': mime.getType(remain) + '; charset=utf-8',
